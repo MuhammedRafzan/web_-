@@ -315,6 +315,145 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
 /* SCROLL REVEAL */
 .sv{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
 .sv.vis{opacity:1;transform:translateY(0)}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — Tablet (max 900px)
+══════════════════════════════════════════ */
+@media(max-width:900px){
+  section{padding:72px 0}
+  .hin{grid-template-columns:1fr}
+  .hvis{display:none}
+  #about .ag{grid-template-columns:1fr}
+  .avis{grid-template-columns:1fr 1fr}
+  #contact .cg2{grid-template-columns:1fr}
+  .fg2{grid-template-columns:1fr 1fr}
+  #team .tg{grid-template-columns:repeat(3,1fr)}
+  #prizes .pg{gap:14px}
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — Mobile (max 640px)
+══════════════════════════════════════════ */
+@media(max-width:640px){
+  /* global */
+  section{padding:56px 0}
+  .con{padding:0 16px}
+  .shd{margin-bottom:36px}
+  .sh{font-size:1.75rem}
+  .ss{font-size:.88rem}
+
+  /* nav */
+  .nl{display:none}
+  .hm{display:flex}
+  #nav{padding:12px 0}
+  #nav.sc{padding:8px 0}
+  .nv{padding:0 16px}
+
+  /* hero */
+  #hero{padding-top:72px;min-height:auto;padding-bottom:56px}
+  .hin{padding:0 16px;gap:32px}
+  .ht{font-size:clamp(2.4rem,10vw,3.2rem)}
+  .ey{font-size:.75rem;letter-spacing:.15em}
+  .hs2{font-size:.9rem}
+  .hbtns{flex-direction:column;gap:10px}
+  .hbtns .btn{width:100%;justify-content:center}
+  .hst{gap:18px}
+  .hst .n{font-size:1.5rem}
+  .hst .l{font-size:.66rem}
+  .badge{font-size:.68rem;padding:6px 12px}
+
+  /* marquee */
+  .mqi{padding:0 18px;font-size:.72rem}
+
+  /* about */
+  #about .ag{gap:36px}
+  .avis{grid-template-columns:1fr 1fr;gap:10px}
+  .avc .an{font-size:1.4rem}
+  .abulls li{font-size:.85rem}
+
+  /* timeline */
+  .tll{left:14px}
+  .tli,.tli:nth-child(even){flex-direction:column;padding-left:36px;margin-bottom:28px}
+  .tlsp{display:none}
+  .tld{left:14px;top:18px}
+  .tlc{padding:14px 16px}
+  .tldt{font-size:.66rem}
+  .tltt{font-size:.9rem}
+  .tldc{font-size:.77rem}
+
+  /* prizes */
+  #prizes .pg{grid-template-columns:1fr;max-width:320px;gap:12px}
+  .pc.gold{transform:none!important}
+  .pamt{font-size:1.7rem}
+
+  /* rules */
+  #rules .rg{grid-template-columns:1fr;gap:12px}
+  .rc{padding:16px 18px}
+  .rb h4{font-size:.88rem}
+  .rb p{font-size:.78rem}
+
+  /* criteria */
+  #criteria .cg{grid-template-columns:1fr 1fr;gap:12px}
+  .cc{padding:18px 14px}
+  .ci2{font-size:1.5rem}
+  .cp{font-size:1.25rem}
+  .ct2{font-size:.85rem}
+  .cd{font-size:.73rem}
+
+  /* register form */
+  .rc2{padding:0 16px}
+  .rh{padding:22px 18px}
+  .rhtt{font-size:1.3rem}
+  .feebadge{font-size:.77rem;padding:5px 12px}
+  .sbar{padding:14px 16px;gap:0}
+  .snl{display:none}
+  .sn{width:24px;height:24px;font-size:.68rem}
+  .sl{margin:0 4px;min-width:10px}
+  .fb2{padding:22px 16px}
+  .frow{grid-template-columns:1fr;gap:12px;margin-bottom:12px}
+  .fg input,.fg select,.fg textarea{font-size:.85rem;padding:10px 12px}
+  .fg label{font-size:.73rem}
+  .fnav{flex-direction:column;gap:10px;align-items:stretch}
+  .fnav .btn{width:100%;justify-content:center}
+  .fnav .si{text-align:center;order:-1}
+  .pi{padding:18px 16px}
+  .pav{font-size:1.6rem}
+  .pmm{gap:6px}
+  .pm{font-size:.68rem;padding:4px 10px}
+  .succ{padding:32px 18px}
+  .stit{font-size:1.3rem}
+  .cid{font-size:.74rem}
+
+  /* team */
+  #team .tg{grid-template-columns:repeat(2,1fr);gap:10px}
+  .tcb{padding:10px 12px}
+  .tcn{font-size:.82rem}
+  .tcr{font-size:.68rem}
+
+  /* contact */
+  .cfr{grid-template-columns:1fr}
+  .cfw{padding:22px 18px}
+  .cii{gap:10px}
+  .cico{width:32px;height:32px;font-size:.85rem}
+  .cib strong{font-size:.8rem}
+  .cib span{font-size:.76rem}
+
+  /* footer */
+  .fg2{grid-template-columns:1fr;gap:28px}
+  .fbot{flex-direction:column;align-items:flex-start;gap:14px}
+  footer{padding:40px 0 24px}
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — Small phones (max 380px)
+══════════════════════════════════════════ */
+@media(max-width:380px){
+  .ht{font-size:2.1rem}
+  .avis{grid-template-columns:1fr}
+  #criteria .cg{grid-template-columns:1fr}
+  #team .tg{grid-template-columns:1fr 1fr}
+  .hst{gap:14px}
+}
 </style>
 </head>
 <body>
@@ -361,7 +500,7 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
         <span class="ey">IEDC CEP Presents</span>
         <span class="gt">Proto</span>type<br>Challenge
       </h1>
-      <p class="hs2">Build something that matters. Present your working prototype to industry experts, compete for ₹50,000+ in prizes, and turn your idea into a real innovation at Advyka 2026.</p>
+      <p class="hs2">Build something that matters. Present your working prototype to industry experts, compete for ₹25,000 in prizes, and turn your idea into a real innovation at Advyka 2026.</p>
       <div class="hbtns">
         <a href="#register" class="btn btn-p btnlg">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
@@ -370,9 +509,9 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
         <a href="#about" class="btn btn-o btnlg">Learn More</a>
       </div>
       <div class="hst">
-        <div><div class="n">₹50K</div><div class="l">Prize Pool</div></div>
+        <div><div class="n">₹25K</div><div class="l">Prize Pool</div></div>
         <div><div class="n">200+</div><div class="l">Teams Expected</div></div>
-        <div><div class="n">2 Days</div><div class="l">Of Innovation</div></div>
+        <div><div class="n">1 Day</div><div class="l">Of Innovation</div></div>
         <div><div class="n">15+</div><div class="l">Expert Judges</div></div>
       </div>
     </div>
@@ -388,7 +527,7 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
           <span class="chip" style="background:rgba(244,121,32,.12);color:#fca45a;border-color:rgba(244,121,32,.25)">AI/ML</span>
         </div>
       </div>
-      <div class="fc fc1 f1"><div class="fn ft">₹25K</div><div class="fl">First Prize</div></div>
+      <div class="fc fc1 f1"><div class="fn ft">₹15K</div><div class="fl">First Prize</div></div>
       <div class="fc fc2 f2"><div class="fn ct">200+</div><div class="fl">Teams Expected</div></div>
       <div class="fc fc3 f3"><div class="fn" style="color:var(--pink)">Apr '26</div><div class="fl">Event Date</div></div>
     </div>
@@ -419,7 +558,7 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
         <span class="slbl">About the Event</span>
         <h2 class="sh">Where Engineers <span class="ft">Build the Future</span></h2>
         <p style="color:var(--muted);font-size:.92rem;line-height:1.78;margin:14px 0">Prototype Challenge is the flagship technical event of Advyka 2026, the annual techfest of College of Engineering Perumon, organized by IEDC CEP — the Innovation & Entrepreneurship Development Cell supported by Kerala Startup Mission.</p>
-        <p style="color:var(--muted);font-size:.92rem;line-height:1.78;margin-bottom:14px">Participants bring working prototypes — hardware, software, or hybrid — and present them to industry professionals. Projects are evaluated on innovation, real-world impact, technical depth, and presentation.</p>
+        <p style="color:var(--muted);font-size:.92rem;line-height:1.78;margin-bottom:14px">Participants bring working prototypes — hardware, software, or hybrid — and present them to industry professionals in a single-day intensive showcase. Projects are evaluated on innovation, real-world impact, technical depth, and presentation.</p>
         <ul class="abulls">
           <li><div class="abi" style="background:rgba(232,35,42,.12)">🚀</div><span><strong style="color:var(--text)">Open to all disciplines</strong> — EEE, CSE, ME, Civil, Biotech & more</span></li>
           <li><div class="abi" style="background:rgba(0,168,157,.12)">🤝</div><span><strong style="color:var(--text)">Teams of 2–4</strong> — Collaborate and compete together</span></li>
@@ -429,10 +568,10 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
         <a href="#register" class="btn btn-p" style="margin-top:6px">Register Now →</a>
       </div>
       <div class="avis">
-        <div class="avc"><div class="an ft">₹50K+</div><div class="al">Prize Pool</div></div>
+        <div class="avc"><div class="an ft">₹25K</div><div class="al">Prize Pool</div></div>
         <div class="avc"><div class="an ct">200+</div><div class="al">Expected Teams</div></div>
         <div class="avc"><div class="an" style="color:var(--pink)">15+</div><div class="al">Expert Judges</div></div>
-        <div class="avc"><div class="an" style="color:var(--yellow)">2</div><div class="al">Days of Competition</div></div>
+        <div class="avc"><div class="an" style="color:var(--yellow)">1</div><div class="al">Day of Competition</div></div>
       </div>
     </div>
   </div>
@@ -444,10 +583,10 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
     <div class="shd c sv"><span class="slbl">Schedule</span><h2 class="sh">Event <span class="ct">Timeline</span></h2><p class="ss">Mark your calendar — every milestone from registration to the grand finale.</p></div>
     <div class="tlw sv">
       <div class="tll"></div>
-      <div class="tli"><div class="tlc"><div class="tldt">Now Open</div><div class="tltt">Registrations Open</div><div class="tldc">Register your team and pay the entry fee. Teams of 2–4 members welcome.</div></div><div class="tld"></div><div class="tlsp"></div></div>
-      <div class="tli"><div class="tlsp"></div><div class="tld" style="background:var(--teal)"></div><div class="tlc"><div class="tldt">March 30, 2026</div><div class="tltt">Abstract Submission</div><div class="tldc">Submit a 1-page abstract. Shortlisted teams notified by email within 3 days.</div></div></div>
-      <div class="tli"><div class="tlc"><div class="tldt">April 12, 2026</div><div class="tltt">Prototype Expo — Day 1</div><div class="tldc">Set up your stall, demo to judges, engage with industry visitors. Preliminary evaluation rounds.</div></div><div class="tld" style="background:var(--pink)"></div><div class="tlsp"></div></div>
-      <div class="tli"><div class="tlsp"></div><div class="tld" style="background:var(--yellow)"></div><div class="tlc"><div class="tldt">April 13, 2026</div><div class="tltt">Finals & Prize Ceremony</div><div class="tldc">Top 10 teams on the main stage. Winners announced at the Advyka 2026 closing ceremony.</div></div></div>
+      <div class="tli"><div class="tlc"><div class="tldt">Now Open</div><div class="tltt">Registrations Open</div><div class="tldc">Register your team and pay the entry fee online. Teams of 2–4 members welcome.</div></div><div class="tld"></div><div class="tlsp"></div></div>
+      <div class="tli"><div class="tlsp"></div><div class="tld" style="background:var(--teal)"></div><div class="tlc"><div class="tldt">March 30, 2026</div><div class="tltt">Abstract Submission</div><div class="tldc">Submit a 1-page abstract of your prototype idea. Shortlisted teams notified by email within 3 days.</div></div></div>
+      <div class="tli"><div class="tlc"><div class="tldt">April 12, 2026 · 9:00 AM</div><div class="tltt">Setup & Demo Round</div><div class="tldc">Set up your stall, demo your prototype to judges, and engage with industry visitors. Evaluation by the panel throughout the day.</div></div><div class="tld" style="background:var(--pink)"></div><div class="tlsp"></div></div>
+      <div class="tli"><div class="tlsp"></div><div class="tld" style="background:var(--yellow)"></div><div class="tlc"><div class="tldt">April 12, 2026 · 4:00 PM</div><div class="tltt">Prize Ceremony</div><div class="tldc">Winners announced and prizes awarded on stage at the Advyka 2026 closing ceremony. Same evening.</div></div></div>
     </div>
   </div>
 </section>
@@ -457,11 +596,11 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
   <div class="con">
     <div class="shd c sv"><span class="slbl">Rewards</span><h2 class="sh">Win <span class="ft">Big</span></h2><p class="ss">Top prototypes take home serious prizes, trophies, certificates, and recognition from Kerala's startup ecosystem.</p></div>
     <div class="pg sv">
-      <div class="pc silver"><div class="pmed">🥈</div><div class="prk">Runner Up</div><div class="pamt" style="color:#c0c8d8">₹15,000</div><div class="plbl">+ Certificate + Goodies</div></div>
-      <div class="pc gold" style="transform:scale(1.05);z-index:2"><div class="pmed">🏆</div><div class="prk">Winner</div><div class="pamt gc">₹25,000</div><div class="plbl">+ Trophy + Certificate + Mentorship</div></div>
-      <div class="pc bronze"><div class="pmed">🥉</div><div class="prk">2nd Runner Up</div><div class="pamt" style="color:#cd9f70">₹10,000</div><div class="plbl">+ Certificate + Goodies</div></div>
+      <div class="pc silver"><div class="pmed">🥈</div><div class="prk">Runner Up</div><div class="pamt" style="color:#c0c8d8">₹8,000</div><div class="plbl">+ Certificate + Goodies</div></div>
+      <div class="pc gold" style="transform:scale(1.05);z-index:2"><div class="pmed">🏆</div><div class="prk">Winner</div><div class="pamt gc">₹15,000</div><div class="plbl">+ Trophy + Certificate + Mentorship</div></div>
+      <div class="pc bronze"><div class="pmed">🥉</div><div class="prk">2nd Runner Up</div><div class="pamt" style="color:#cd9f70">₹5,000</div><div class="plbl">+ Certificate + Goodies</div></div>
     </div>
-    <p style="text-align:center;color:var(--muted);font-size:.8rem;margin-top:28px">Special awards for Best Innovation, Best Presentation & Most Impactful Prototype</p>
+    <p style="text-align:center;color:var(--muted);font-size:.8rem;margin-top:28px">Special awards for Best Innovation &amp; Best Presentation · Total Prize Pool: ₹25,000</p>
   </div>
 </section>
 
@@ -475,7 +614,7 @@ footer{border-top:1px solid var(--border);background:var(--card2);padding:56px 0
       <div class="rc"><div class="rn">03</div><div class="rb"><h4>Working Prototype Required</h4><p>A functional prototype must be physically present. PPT-only or simulation-only entries will not be evaluated.</p></div></div>
       <div class="rc"><div class="rn">04</div><div class="rb"><h4>Originality</h4><p>Projects must be original work. Plagiarism or purchased kits presented as original will result in disqualification.</p></div></div>
       <div class="rc"><div class="rn">05</div><div class="rb"><h4>Registration Fee</h4><p>₹300 per team (non-refundable). Payment via Razorpay during registration. Confirmation email sent instantly.</p></div></div>
-      <div class="rc"><div class="rn">06</div><div class="rb"><h4>ID Proof Required</h4><p>All team members must carry valid college ID cards on both days of the event.</p></div></div>
+      <div class="rc"><div class="rn">06</div><div class="rb"><h4>ID Proof Required</h4><p>All team members must carry valid college ID cards on the day of the event for entry verification.</p></div></div>
       <div class="rc"><div class="rn">07</div><div class="rb"><h4>Power & Space</h4><p>Each team gets a 4×4 ft table + one 5A socket. Additional power requirements must be declared at registration.</p></div></div>
       <div class="rc"><div class="rn">08</div><div class="rb"><h4>Judges' Decision</h4><p>The judging panel's decision is final and binding. No appeals after results are announced.</p></div></div>
     </div>
